@@ -938,16 +938,6 @@ iframe.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
     position: absolute;
 }
 
-#g28::after {
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    width: 1px;
-    height: 90vh;
-    background: #6a6a6a;
-}
-
 #g29 {
     grid-area: 2 / 12 / 2 / 12;
     background-color: #f90b0b;
