@@ -560,6 +560,12 @@ iframe.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
     transform: translateY(-5px);
 }
 
+.head4 {
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(.5px);
+}
+
 .head4 > p {
     text-align: center;
     color: #6a747c;
@@ -615,6 +621,10 @@ iframe.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
 
 .head4 tr a:hover {
     color: rgb(70, 70, 247);
+}
+
+.head44 {
+    display: none;
 }
 
 .head5 {
@@ -1683,6 +1693,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        gap: 45px; 
     }
 
     .head3 > div {
@@ -1754,6 +1765,162 @@ footer {
 
     .dot.active {
     display: none;
+}
+
+.head44 {
+        display: block;
+        position: relative;
+        width: 600px;
+        height: 600px;
+        z-index: 0;
+        position: static;
+        transform: translate(30%, -120%);
+        margin-bottom: -600px;
+        z-index: 0;
+}
+
+    .main-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+}
+
+    .center-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        animation: pulse 2s ease-in-out infinite alternate;
+        background: url(IMAGES/logoifri.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+    .orb {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 80%;
+        transform: translate(-50%, -50%);
+        animation: rotate 4s linear infinite alternate;
+}
+
+    .small-circle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+    .small-circle:nth-child(1) {
+        transform: translateX(0) rotate(0deg);
+        transform-origin: 0 240px;
+        background: url(IMAGES/UCL.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate0 4s ease infinite;
+}
+
+    .small-circle:nth-child(2) {
+        transform: translateX(0) rotate(60deg);
+        transform-origin: 0 240px;
+        background: url(IMAGES/ENM.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate0 8s ease infinite;
+}
+
+    .small-circle:nth-child(3) {
+        transform: translateX(0) rotate(120deg);
+        transform-origin: 0 240px;
+        background: url(IMAGES/EPC.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate0 8s ease infinite;
+}
+
+    .small-circle:nth-child(4) {
+        transform: translateX(0) rotate(180deg);
+        transform-origin: 0 240px;
+        background: url(IMAGES/IMP.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate0 8s ease infinite;
+}
+
+    .small-circle:nth-child(5) {
+        transform: translateX(0) rotate(240deg);
+        transform-origin: 0 240px;
+        background: url(IMAGES/DCG.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate0 8s ease infinite;
+}
+
+    .small-circle:nth-child(6) {
+        transform: translateX(0) rotate(300deg);
+        transform-origin: 0 240px;
+        background: url(IMAGES/OPSI.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: rotate0 8s ease infinite;
+}
+
+    @keyframes rotate {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg) scale(1.1);
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg) scale(0);
+        }    
+}
+
+    @keyframes rotate0 {
+        0% {
+            border: 3px solid blue;
+        }
+        25% {
+             border: 2px solid rgb(98, 14, 216);
+        }
+        50% {
+             border: 1px solid rgb(73, 13, 93);
+        }
+        75% {
+             border: 2px solid rgb(201, 29, 207);
+        }
+        100% {
+             border: 3px solid violet;
+        }
+}
+
+    @keyframes pulse {
+        from {
+            transform: translate(-50%, -50%) scale(.5) rotate(0deg);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border: 3px solid blue;
+        }
+        to {
+            transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgb(73, 13, 93);
+        }
 }
 
 }
